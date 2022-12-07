@@ -1,0 +1,27 @@
+#include <iostream>
+#include <stdio.h>
+#include <windows.h>
+#include <conio.h>
+#include <math.h>
+#include <algorithm>
+
+using namespace std;
+
+int main()
+{
+	int n, m, s, i;
+	s = 0;
+	
+	cout << "Enter n, m, (n<m): " << endl;
+	cin >> n >> m;
+
+	if (n < m)
+	{
+		for (i = n; i <= m; i++)s += i;
+		cout << "sum = " << s << endl;
+	}
+	else
+		cout << "Invalid option" << endl;
+	
+	return 0;
+}
